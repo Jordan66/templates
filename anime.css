@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(15, 15, 15); */
+    font-family: Roboto, sans-serif;
+    background-color: #f1f1f1;
+}
+
+#menu {
+    font-size: 1.5em;
+}
+
+#input {
+    /* background-color: rgb(15, 15, 15); */
+    border-color: rgba(128, 128, 128, 0.7);
+    /* border-radius: 100px; */
+}
+
+#sidebar {
+    max-width: 230px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 50px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#nav-link:hover {
+    background-color: #DDD;
+}
+
+#nav-link-active {
+    background-color: #DDD;
+}
+
+#nav-link-active span {
+    padding: 0 15px;
+    vertical-align: bottom;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+#nav-link span {
+    padding: 0 15px;
+    vertical-align: bottom;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+#nav-footer {
+    padding-right: 30px;
+    padding-left: 1rem;
+}
+
+#footer-nav-link {
+    padding: 0;
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, 0.8);
+}
+
+#chip-container {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px 15px;
+    /* padding-left: 130px; */
+    z-index: 99;
+    display: flex;
+    /* overflow: auto; */
+    width: 100%;
+    /* position: fixed; */
+}
+
+#chip {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#chip-active {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    margin-right: 5px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#chip-active a {
+    text-decoration: none;
+    color: white;
+}
+
+#chip a {
+    text-decoration: none;
+    color: #000;
+}
+
+#chip:hover {
+    background-color: #DDD;
+}
+
+#YouTubevideoDetails {
+    display: flex;
+}
+
+#VideoDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#VideoTitle {
+    font-size: 15px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+#VideoViews {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #606060;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+#ChannelName {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #606060;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-bottom: -1px;
+}
+
+
+
+
+/* #mcs-horizontal-example {
+    width: 100%;
+    overflow-x: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-items: flex-start;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+}
+
+#mcs-horizontal-example .mCSB_container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+#mcs-horizontal-example div {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+#mcs-horizontal-example p {
+    -webkit-flex: 2 0 auto;
+    flex: 2 0 auto;
+    max-width: 100%;
+    display: inline-block;
+} */
+
+#sidebar2 {
+    max-width: 100px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 50px;
+    /* background-color: #ffffff; */
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    z-index: -1;
+    text-align: center;
+    /* background-color: red; */
+}
+
+#dotdotdot:hover {
+    background-color: #606060;
+}
+
+#sidebar2 div {
+    padding: 0 1px;
+    vertical-align: bottom;
+    padding-left: 1px;
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+#nav-link-active2 {
+    background-color: #ddd;
+}
+
+#nav-link-active2:hover {
+    background-color: #DDD;
+}
+
+@media (max-width: 1276px) {
+    #sidebar {
+        display: none;
+    }
+}
